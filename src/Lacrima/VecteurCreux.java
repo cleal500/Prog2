@@ -51,6 +51,52 @@ import java.util.Iterator;
  * @author vos noms
  */
 public class VecteurCreux implements Iterable <Double> {
+
+
+    private class Maillon<Double> {
+        private Double interne;
+        private int indice;
+        private int emplacement;
+        private Maillon <Double> suivant;
+        private Maillon <Double> precedent;
+
+        private Maillon( Double interne, int indice, int emplacement ) {
+            this.interne = interne;
+            this.indice = indice;
+            this.emplacement = emplacement;
+            this.suivant = null;
+            this.precedent = null;
+        }
+
+        public Maillon() {
+
+        }
+    }
+
+    /**
+     * Contenant utilis&eacute; pour les it&eacute;rateurs qui permettront de parcourir
+     * le VecteurCreux.
+     *
+     * @author vos noms
+     */
+    public class IterateurVecteurCreux implements Iterator <Double> {
+        Maillon <Double> courrant;
+
+
+        @Override
+        public boolean hasNext() {
+            return null != courrant;
+        }
+
+        @Override
+        public Double next() {
+            Double resultat = courrant.interne;
+            courrant = courrant.suivant;
+            return resultat;
+        }
+    }
+
+
     public int taille;
     public int nbElement = 0;
     private Maillon <Double> prev = null;
@@ -421,46 +467,4 @@ public class VecteurCreux implements Iterable <Double> {
      */
 
 
-    private class Maillon<Double> {
-        private Double interne;
-        private int indice;
-        private int emplacement;
-        private Maillon <Double> suivant;
-        private Maillon <Double> precedent;
-
-        private Maillon( Double interne, int indice, int emplacement ) {
-            this.interne = interne;
-            this.indice = indice;
-            this.emplacement = emplacement;
-            this.suivant = null;
-            this.precedent = null;
-        }
-
-        public Maillon() {
-
-        }
-    }
-
-    /**
-     * Contenant utilis&eacute; pour les it&eacute;rateurs qui permettront de parcourir
-     * le VecteurCreux.
-     *
-     * @author vos noms
-     */
-    public class IterateurVecteurCreux implements Iterator <Double> {
-        Maillon <Double> courrant;
-
-
-        @Override
-        public boolean hasNext() {
-            return null != courrant;
-        }
-
-        @Override
-        public Double next() {
-            Double resultat = courrant.interne;
-            courrant = courrant.suivant;
-            return resultat;
-        }
-    }
 }
