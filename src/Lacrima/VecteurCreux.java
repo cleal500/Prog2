@@ -67,7 +67,6 @@ public class VecteurCreux implements Iterable <Double> {
         next = new Maillon <> ();
         prev.suivant = next;
         next.precedent = prev;
-
     }
 
     /**
@@ -84,8 +83,6 @@ public class VecteurCreux implements Iterable <Double> {
         for (int i = 0; i < vecteurFixe.length; i++) {
             if (vecteurFixe[i] > 0) {
                 nbElement += 1;
-
-
                 Maillon <Double> nouveau = new Maillon <> (vecteurFixe[i], nbElement, i + 1);
 
                 if (null != next) {
@@ -94,11 +91,8 @@ public class VecteurCreux implements Iterable <Double> {
                 }
                 if (null == prev) {
                     prev = nouveau;
-
-
                 }
                 next = nouveau;
-
             }
         }
     }
@@ -139,17 +133,11 @@ public class VecteurCreux implements Iterable <Double> {
                 }
                 if (null == vecteurR.prev) {
                     vecteurR.prev = nouveau;
-
-
                 }
                 vecteurR.next = nouveau;
-
             }
             leMaillon = leMaillon.suivant;
-        }
-
-
-        return vecteurR;
+        }return vecteurR;
     }
 
     /**
@@ -255,15 +243,12 @@ public class VecteurCreux implements Iterable <Double> {
                 if (leMaillon.emplacement == indice) {
                     contenu = leMaillon.interne;
                 }
-
             }
             leMaillon = leMaillon.suivant;
         }
 
-
         return contenu;
     }
-
     /**
      * Construis un it&eacute;rateur sur les &eacute;l&eacute;ments du vecteur, y compris les z&eacute;ros.
      *
@@ -360,8 +345,6 @@ public class VecteurCreux implements Iterable <Double> {
                     }
                     if (null == prev) {
                         prev = nouveau;
-
-
                     }
                     next = nouveau;
 
