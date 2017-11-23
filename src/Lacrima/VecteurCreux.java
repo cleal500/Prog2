@@ -48,13 +48,17 @@ import java.util.Iterator;
  * des nouveaux vecteurs comme éléments de retour.  Assurez-vous que les vecteurs construits
  * reste des VecteurCreux : les cases dans la liste chaine ne contiennent pas de zéro.
  *
- * @author vos noms
+ * @author Alexandre Clément
+ * CLEA16059309
  */
 public class VecteurCreux implements Iterable <Double> {
 
 
+    public int taille;
+    public int nbElement = 0;
     private Maillon <Double> debut = null;
     private Maillon <Double> next = null;
+
     /**
      * Construis un VecteurCreux où toutes les valeurs sont à 0.
      *
@@ -64,9 +68,6 @@ public class VecteurCreux implements Iterable <Double> {
         this.taille = indiceMax;
     }
 
-
-    public int taille;
-    public int nbElement = 0;
     /**
      * Construis un VecteurCreux à partir d'un tableau.
      * Le vecteur construit aura une taille égale à celle du tableau en
@@ -86,13 +87,14 @@ public class VecteurCreux implements Iterable <Double> {
     }
 
 
-
     /**
-     * @param element
-     * @param emplacement
+     * Pernet d'ajouter des éléments dans la liste chainé du vecteur.
+     *
+     * @param element     Ce la valeur de ce que le maillon doit contenir
+     * @param emplacement Où l'on doit insérer le maillon dans la chaine.
      */
 
-    public void enfiler( double element, int emplacement ) {
+    private void enfiler( double element, int emplacement ) {
 
         Maillon <Double> nouveau = new Maillon <> (element, emplacement);
 
@@ -169,9 +171,11 @@ public class VecteurCreux implements Iterable <Double> {
     public boolean equals( Object objet ) {
         Boolean testEgal = true;
         int testValeurInterne = 0;
-
         VecteurCreux v3 = (VecteurCreux) objet;
+
         if (v3 == null) {
+            testEgal = false;
+        } else if (this.getClass () != objet.getClass ()) {
             testEgal = false;
         } else if (this.taille != v3.taille ()) {
             testEgal = false;
@@ -182,10 +186,10 @@ public class VecteurCreux implements Iterable <Double> {
                 }
             }
         }
+
         if (testValeurInterne != this.taille ()) {
             testEgal = false;
         }
-
         return testEgal;
     }
 
@@ -211,22 +215,26 @@ public class VecteurCreux implements Iterable <Double> {
         if (v2.taille () != this.taille ()) {
             throw new IndexOutOfBoundsException ();
         }
+
         for (int i = 0; i < this.taille (); ++i) {
-            if (this.get (i + 1) != 0 && v2.get (i + 1) != 0 && this.nbElement == v2.nbElement) {
+            if (this.get (i + 1) != 0 && v2.get (i + 1) != 0
+                    && this.nbElement == v2.nbElement) {
                 testValeur[i] = this.get (i + 1) / v2.get (i + 1);
                 s = testValeur[i];
             }
         }
 
-        for (int y = 0; y < testValeur.length; ++y) {
-            if (testValeur[y] != 0) {
-                test += testValeur[y];
+        for (double aTestValeur : testValeur) {
+            if (aTestValeur != 0) {
+                test += aTestValeur;
                 ++indiceTest;
             }
         }
+
         if (test != 0 && s < 0) {
             testAntiParallel = test / indiceTest == s;
         }
+
         return testAntiParallel;
     }
 
@@ -276,7 +284,6 @@ public class VecteurCreux implements Iterable <Double> {
      */
     public boolean estParallelA( VecteurCreux v2 ) throws IndexOutOfBoundsException {
         boolean testParallel = false;
-
         double[] testValeur = new double[taille];
         double s = 0;
         double test = 0;
@@ -285,24 +292,24 @@ public class VecteurCreux implements Iterable <Double> {
         if (v2.taille () != this.taille ()) {
             throw new IndexOutOfBoundsException ();
         }
+
         for (int i = 0; i < this.taille (); ++i) {
-            if (this.get (i + 1) != 0 && v2.get (i + 1) != 0 && this.nbElement == v2.nbElement) {
+            if (this.get (i + 1) != 0 && v2.get (i + 1) != 0
+                    && this.nbElement == v2.nbElement) {
                 testValeur[i] = this.get (i + 1) / v2.get (i + 1);
                 s = testValeur[i];
             }
         }
 
-        for (int y = 0; y < testValeur.length; ++y) {
-            if (testValeur[y] != 0) {
-                test += testValeur[y];
+        for (double aTestValeur : testValeur) {
+            if (aTestValeur != 0) {
+                test += aTestValeur;
                 ++indiceTest;
             }
         }
         if (test != 0 && s > 0) {
             testParallel = test / indiceTest == s;
         }
-
-
         return testParallel;
     }
 
@@ -325,14 +332,11 @@ public class VecteurCreux implements Iterable <Double> {
         }
 
         while (leMaillon != null) {
-
-                if (leMaillon.emplacement == indice) {
-                    contenu = leMaillon.interne;
-                }
-
+            if (leMaillon.emplacement == indice) {
+                contenu = leMaillon.interne;
+            }
             leMaillon = leMaillon.suivant;
         }
-
         return contenu;
     }
 
@@ -365,11 +369,9 @@ public class VecteurCreux implements Iterable <Double> {
         if (this.taille () != v2.taille ()) {
             throw new IndexOutOfBoundsException ();
         }
-
         for (int i = 0; i < this.taille (); ++i) {
             resultat += this.get (i + 1) * v2.get (i + 1);
         }
-
         return resultat;
     }
 
@@ -396,7 +398,6 @@ public class VecteurCreux implements Iterable <Double> {
         for (int i = 0; i < this.taille (); ++i) {
             resultat += this.get (i + 1) * this.get (i + 1);
         }
-
         return Math.sqrt (resultat);
     }
 
@@ -415,7 +416,6 @@ public class VecteurCreux implements Iterable <Double> {
         for (int i = 0; i < this.taille (); ++i) {
             nouveauVecteur[i] = this.get (i + 1) * -1;
         }
-
         return new VecteurCreux (nouveauVecteur);
     }
 
@@ -434,21 +434,20 @@ public class VecteurCreux implements Iterable <Double> {
         if (indice < 1 || indice > taille ()) {
             throw new IndexOutOfBoundsException ();
         }
+        while (leMaillon != null) {
 
-            while (leMaillon != null) {
+            if (leMaillon.emplacement == indice) {
+                existe = true;
+                if (valeur != 0) {
+                    leMaillon.interne = valeur;
 
-                if (leMaillon.emplacement == indice) {
-                    existe = true;
-                    if (valeur != 0) {
-                        leMaillon.interne = valeur;
-
-                    } else {
-                        leMaillon.emplacement = -1;
-                        --nbElement;
-                    }
+                } else {
+                    leMaillon.emplacement = -1;
+                    --nbElement;
                 }
-                leMaillon = leMaillon.suivant;
             }
+            leMaillon = leMaillon.suivant;
+        }
         if (!existe && valeur != 0) {
             enfiler (valeur, indice);
         }
@@ -480,7 +479,6 @@ public class VecteurCreux implements Iterable <Double> {
         return new VecteurCreux (nouveauVecteur);
     }
 
-
     /**
      * Retourne le nombre d'éléments que le vecteur contient.
      * Cela comprend les zéros et les non-zéros.
@@ -491,9 +489,38 @@ public class VecteurCreux implements Iterable <Double> {
         return this.taille;
     }
 
+    /**
+     * Methode pour représenter d'une façon graphique tout les éléments du vecteur y compris
+     * les "0".
+     *
+     * @return String de tout les éléments.
+     */
+
     @Override
     public String toString() {
-        return super.toString ();
+        StringBuilder retour = new StringBuilder ("[");
+        Maillon <Double> leMaillon = debut;
+        int indicePacour = 1;
+
+        if (debut == null && taille () == 0) {
+            retour.append ("Null");
+        }
+
+        while (indicePacour != taille () + 1) {
+            if (leMaillon != null
+                    && indicePacour == leMaillon.emplacement) {
+                retour.append (leMaillon.interne);
+                leMaillon = leMaillon.suivant;
+            } else {
+                retour.append ("0.0");
+            }
+            if (indicePacour != taille ()) {
+                retour.append (", ");
+            }
+            ++indicePacour;
+        }
+        retour.append ("]");
+        return retour.toString ();
     }
 
     /**
@@ -517,32 +544,40 @@ public class VecteurCreux implements Iterable <Double> {
             nouveauVecteur[i] = this.get (i + 1) / n;
         }
         return new VecteurCreux (nouveauVecteur);
-
     }
 
+    /**
+     * Contenant utilise pour les Maillons de la chaine qui
+     * représentera le VecteurCreux.
+     *
+     * @author Alexandre Clément
+     * CLEA16059309
+     */
 
     private class Maillon<Double> {
         private double interne;
         private int emplacement;
-
         private Maillon <Double> suivant;
 
+        /**
+         * Constructeur du Maillon qui fait partie de la liste chainé du vecteur creux.
+         *
+         * @param interne     Valeur que doit contenir le maillon.
+         * @param emplacement Sont emplacement danss la liste chainé.
+         */
         private Maillon( double interne, int emplacement ) {
             this.interne = interne;
             this.emplacement = emplacement;
             this.suivant = null;
-
-
         }
-
-
     }
 
     /**
-     * Contenant utilisé pour les itérateurs qui permettront de parcourir
+     * Contenant utilisé pour les itérateurs qui permetteront de parcourir
      * le VecteurCreux.
      *
-     * @author vos noms
+     * @author Alexandre Clément
+     * CLEA16059309
      */
     public class IterateurVecteurCreux implements Iterator <Double> {
         Maillon <Double> courrant;
@@ -553,7 +588,6 @@ public class VecteurCreux implements Iterable <Double> {
             courrant = origine.debut;
         }
 
-
         @Override
         public boolean hasNext() {
             boolean has = true;
@@ -563,6 +597,7 @@ public class VecteurCreux implements Iterable <Double> {
             ++indiceTaille;
             return has;
         }
+
 
         @Override
         public Double next() {
@@ -575,17 +610,7 @@ public class VecteurCreux implements Iterable <Double> {
                 }
             }
             ++indice;
-
             return resultat;
         }
     }
-
-    /**
-     * Contenant utilise pour les Maillons de la chaine qui
-     * représentera le VecteurCreux.
-     *
-     * @author vos noms
-     */
-
-
 }
