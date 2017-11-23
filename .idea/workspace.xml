@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd2f55da-17cf-48cc-a7c3-6cc141e8fdfc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/VecteurCreux$IterateurVecteurCreux.class" afterPath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/VecteurCreux$IterateurVecteurCreux.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/VecteurCreux$Maillon.class" afterPath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/VecteurCreux$Maillon.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/VecteurCreux.class" afterPath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/VecteurCreux.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/main.class" afterPath="$PROJECT_DIR$/out/production/INF_TP2/Lacrima/main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lacrima/VecteurCreux.java" afterPath="$PROJECT_DIR$/src/Lacrima/VecteurCreux.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lacrima/main.java" afterPath="$PROJECT_DIR$/src/Lacrima/main.java" />
@@ -5058,29 +5062,21 @@
       <file leaf-file-name="VecteurCreux.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lacrima/VecteurCreux.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+            <state relative-caret-position="-370">
+              <caret line="497" column="33" lean-forward="true" selection-start-line="497" selection-start-column="33" selection-end-line="497" selection-end-column="33" />
               <folding>
-                <element signature="e#3339#3340#0" expanded="true" />
-                <element signature="e#3386#3387#0" expanded="true" />
-                <element signature="e#4645#4646#0" expanded="true" />
-                <element signature="e#4684#4685#0" expanded="true" />
-                <element signature="e#6865#6866#0" expanded="true" />
-                <element signature="e#6892#6893#0" expanded="true" />
-                <element signature="e#7365#7366#0" expanded="true" />
-                <element signature="e#7393#7394#0" expanded="true" />
-                <element signature="e#10690#10691#0" expanded="true" />
-                <element signature="e#10741#10742#0" expanded="true" />
+                <element signature="e#2971#2972#0" expanded="true" />
+                <element signature="e#3010#3011#0" expanded="true" />
+                <element signature="e#12369#12370#0" expanded="true" />
+                <element signature="e#12424#12425#0" expanded="true" />
                 <element signature="docComment;method#nbrElementNonZero#0;class#VecteurCreux#0" expanded="false" />
-                <element signature="e#11693#11694#0" expanded="true" />
-                <element signature="e#11730#11731#0" expanded="true" />
-                <element signature="e#12042#12043#0" expanded="true" />
-                <element signature="e#12068#12069#0" expanded="true" />
-                <element signature="e#12434#12435#0" expanded="true" />
-                <element signature="e#12461#12462#0" expanded="true" />
+                <element signature="e#13629#13630#0" expanded="true" />
+                <element signature="e#13666#13667#0" expanded="true" />
                 <element signature="docComment;method#taille#0;class#VecteurCreux#0" expanded="false" />
-                <marker date="1511417273431" expanded="false" signature="15209:15220" ph=" { " />
-                <marker date="1511417273431" expanded="false" signature="15232:15238" ph=" }" />
+                <element signature="e#17369#17370#0" expanded="true" />
+                <element signature="e#17409#17410#0" expanded="true" />
+                <element signature="e#18858#18859#0" expanded="true" />
+                <element signature="e#18906#18907#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -5089,8 +5085,8 @@
       <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lacrima/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="749">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -5099,8 +5095,8 @@
       <file leaf-file-name="VecteurCreuxTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lacrima/VecteurCreuxTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-826">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="1064" column="15" lean-forward="false" selection-start-line="1063" selection-start-column="4" selection-end-line="1075" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -5112,7 +5108,7 @@
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+              <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -5159,8 +5155,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/VecteurCreux.java" />
         <option value="$PROJECT_DIR$/src/Lacrima/VecteurCreuxTestTest.java" />
-        <option value="$PROJECT_DIR$/src/Lacrima/main.java" />
         <option value="$PROJECT_DIR$/src/Lacrima/VecteurCreux.java" />
+        <option value="$PROJECT_DIR$/src/Lacrima/main.java" />
       </list>
     </option>
   </component>
@@ -5258,8 +5254,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VecteurCreuxTest.testAgrandir_1">
-    <configuration name="VecteurCreuxTest.testAddition_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.main">
+    <configuration name="VecteurCreuxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Lacrima.*" />
@@ -5271,7 +5267,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Lacrima" />
       <option name="MAIN_CLASS_NAME" value="Lacrima.VecteurCreuxTest" />
-      <option name="METHOD_NAME" value="testAddition_3" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="VecteurCreuxTest.testIterator_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Lacrima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="INF_TP2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Lacrima" />
+      <option name="MAIN_CLASS_NAME" value="Lacrima.VecteurCreuxTest" />
+      <option name="METHOD_NAME" value="testIterator_3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -5284,7 +5305,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VecteurCreuxTest.testAddition_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VecteurCreuxTest.testIterator_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Lacrima.*" />
@@ -5296,7 +5317,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Lacrima" />
       <option name="MAIN_CLASS_NAME" value="Lacrima.VecteurCreuxTest" />
-      <option name="METHOD_NAME" value="testAddition_4" />
+      <option name="METHOD_NAME" value="testIterator_4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -5309,7 +5330,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VecteurCreuxTest.testAddition_5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VecteurCreuxTest.testMultiplicationScalaire_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Lacrima.*" />
@@ -5321,57 +5342,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Lacrima" />
       <option name="MAIN_CLASS_NAME" value="Lacrima.VecteurCreuxTest" />
-      <option name="METHOD_NAME" value="testAddition_5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="VecteurCreuxTest.testAddition_6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Lacrima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="INF_TP2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Lacrima" />
-      <option name="MAIN_CLASS_NAME" value="Lacrima.VecteurCreuxTest" />
-      <option name="METHOD_NAME" value="testAddition_6" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="VecteurCreuxTest.testAgrandir_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Lacrima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="INF_TP2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Lacrima" />
-      <option name="MAIN_CLASS_NAME" value="Lacrima.VecteurCreuxTest" />
-      <option name="METHOD_NAME" value="testAgrandir_1" />
+      <option name="METHOD_NAME" value="testMultiplicationScalaire_1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -5464,20 +5435,39 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Lacrima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Lacrima.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="INF_TP2" />
+      <envs />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_3" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_4" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_5" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_6" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAgrandir_1" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testIterator_3" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testIterator_4" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testMultiplicationScalaire_1" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAgrandir_1" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_6" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_5" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_4" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testAddition_3" />
+        <item index="0" class="java.lang.String" itemvalue="Application.main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testMultiplicationScalaire_1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testIterator_4" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VecteurCreuxTest.testIterator_3" />
       </list>
     </recent_temporary>
   </component>
@@ -5500,7 +5490,7 @@
       <workItem from="1511208436401" duration="31453000" />
       <workItem from="1511319042818" duration="4114000" />
       <workItem from="1511409136732" duration="82000" />
-      <workItem from="1511409322141" duration="7684000" />
+      <workItem from="1511409322141" duration="18675000" />
     </task>
     <task id="LOCAL-00001" summary="allo">
       <created>1511322004946</created>
@@ -5516,43 +5506,50 @@
       <option name="project" value="LOCAL" />
       <updated>1511322209584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="en cours">
+      <created>1511417379745</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511417379745</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VecteurCreuxTest_testAddition_1 - 2017.11.23 at 01h 04m 42s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_1" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest - 2017.11.23 at 14h 50m 12s.xml">
+      <configuration name="VecteurCreuxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_1 - 2017.11.23 at 01h 07m 28s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_1" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest - 2017.11.23 at 14h 50m 27s.xml">
+      <configuration name="VecteurCreuxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_1 - 2017.11.23 at 01h 07m 38s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_1" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest - 2017.11.23 at 14h 52m 06s.xml">
+      <configuration name="VecteurCreuxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_1 - 2017.11.23 at 01h 07m 54s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_1" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest_testIterator_1 - 2017.11.23 at 14h 42m 55s.xml">
+      <configuration name="VecteurCreuxTest.testIterator_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_2 - 2017.11.23 at 01h 08m 02s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_2" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest_testIterator_1 - 2017.11.23 at 14h 43m 52s.xml">
+      <configuration name="VecteurCreuxTest.testIterator_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_3 - 2017.11.23 at 01h 08m 04s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_3" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest_testIterator_1 - 2017.11.23 at 14h 46m 45s.xml">
+      <configuration name="VecteurCreuxTest.testIterator_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_4 - 2017.11.23 at 01h 08m 10s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_4" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest_testIterator_2 - 2017.11.23 at 14h 46m 49s.xml">
+      <configuration name="VecteurCreuxTest.testIterator_2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_5 - 2017.11.23 at 01h 08m 13s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_5" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest_testIterator_3 - 2017.11.23 at 14h 46m 52s.xml">
+      <configuration name="VecteurCreuxTest.testIterator_3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAddition_6 - 2017.11.23 at 01h 08m 16s.xml">
-      <configuration name="VecteurCreuxTest.testAddition_6" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest_testIterator_4 - 2017.11.23 at 14h 46m 55s.xml">
+      <configuration name="VecteurCreuxTest.testIterator_4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VecteurCreuxTest_testAgrandir_1 - 2017.11.23 at 01h 08m 19s.xml">
-      <configuration name="VecteurCreuxTest.testAgrandir_1" configurationId="JUnit" />
+    <history-entry file="VecteurCreuxTest_testMultiplicationScalaire_1 - 2017.11.23 at 14h 46m 59s.xml">
+      <configuration name="VecteurCreuxTest.testMultiplicationScalaire_1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50247000" />
+    <option name="totallyTimeSpent" value="61238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="77" y="23" width="1230" height="1417" extended-state="0" />
@@ -5595,25 +5592,42 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/Prog2" />
       <path value="$USER_HOME$" />
     </ignored-roots>
     <MESSAGE value="allo" />
     <MESSAGE value="allo2" />
-    <option name="LAST_COMMIT_MESSAGE" value="allo2" />
+    <MESSAGE value="en cours" />
+    <option name="LAST_COMMIT_MESSAGE" value="en cours" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Lacrima/main.java</url>
-          <line>5</line>
+          <line>7</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lacrima/VecteurCreuxTest.java</url>
+          <line>407</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lacrima/VecteurCreuxTest.java</url>
+          <line>477</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="58" />
+      <option name="time" value="95" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -5623,26 +5637,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#4645#4646#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6892#6893#0" expanded="true" />
-            <element signature="e#7365#7366#0" expanded="true" />
-            <element signature="e#7393#7394#0" expanded="true" />
-            <element signature="e#10690#10691#0" expanded="true" />
-            <element signature="e#10741#10742#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#12369#12370#0" expanded="true" />
+            <element signature="e#12424#12425#0" expanded="true" />
             <element signature="docComment;method#nbrElementNonZero#0;class#VecteurCreux#0" expanded="false" />
-            <element signature="e#11693#11694#0" expanded="true" />
-            <element signature="e#11730#11731#0" expanded="true" />
-            <element signature="e#12042#12043#0" expanded="true" />
-            <element signature="e#12068#12069#0" expanded="true" />
-            <element signature="e#12434#12435#0" expanded="true" />
-            <element signature="e#12461#12462#0" expanded="true" />
+            <element signature="e#13629#13630#0" expanded="true" />
+            <element signature="e#13666#13667#0" expanded="true" />
             <element signature="docComment;method#taille#0;class#VecteurCreux#0" expanded="false" />
-            <marker date="1511417273431" expanded="false" signature="15209:15220" ph=" { " />
-            <marker date="1511417273431" expanded="false" signature="15232:15238" ph=" }" />
+            <element signature="e#17369#17370#0" expanded="true" />
+            <element signature="e#17409#17410#0" expanded="true" />
+            <element signature="e#18858#18859#0" expanded="true" />
+            <element signature="e#18906#18907#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5688,26 +5694,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#4645#4646#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6892#6893#0" expanded="true" />
-            <element signature="e#7365#7366#0" expanded="true" />
-            <element signature="e#7393#7394#0" expanded="true" />
-            <element signature="e#10690#10691#0" expanded="true" />
-            <element signature="e#10741#10742#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#12369#12370#0" expanded="true" />
+            <element signature="e#12424#12425#0" expanded="true" />
             <element signature="docComment;method#nbrElementNonZero#0;class#VecteurCreux#0" expanded="false" />
-            <element signature="e#11693#11694#0" expanded="true" />
-            <element signature="e#11730#11731#0" expanded="true" />
-            <element signature="e#12042#12043#0" expanded="true" />
-            <element signature="e#12068#12069#0" expanded="true" />
-            <element signature="e#12434#12435#0" expanded="true" />
-            <element signature="e#12461#12462#0" expanded="true" />
+            <element signature="e#13629#13630#0" expanded="true" />
+            <element signature="e#13666#13667#0" expanded="true" />
             <element signature="docComment;method#taille#0;class#VecteurCreux#0" expanded="false" />
-            <marker date="1511417273431" expanded="false" signature="15209:15220" ph=" { " />
-            <marker date="1511417273431" expanded="false" signature="15232:15238" ph=" }" />
+            <element signature="e#17369#17370#0" expanded="true" />
+            <element signature="e#17409#17410#0" expanded="true" />
+            <element signature="e#18858#18859#0" expanded="true" />
+            <element signature="e#18906#18907#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5753,26 +5751,18 @@
         <state relative-caret-position="3030">
           <caret line="202" column="10" lean-forward="false" selection-start-line="202" selection-start-column="10" selection-end-line="202" selection-end-column="10" />
           <folding>
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#4645#4646#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6892#6893#0" expanded="true" />
-            <element signature="e#7365#7366#0" expanded="true" />
-            <element signature="e#7393#7394#0" expanded="true" />
-            <element signature="e#10690#10691#0" expanded="true" />
-            <element signature="e#10741#10742#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#12369#12370#0" expanded="true" />
+            <element signature="e#12424#12425#0" expanded="true" />
             <element signature="docComment;method#nbrElementNonZero#0;class#VecteurCreux#0" expanded="false" />
-            <element signature="e#11693#11694#0" expanded="true" />
-            <element signature="e#11730#11731#0" expanded="true" />
-            <element signature="e#12042#12043#0" expanded="true" />
-            <element signature="e#12068#12069#0" expanded="true" />
-            <element signature="e#12434#12435#0" expanded="true" />
-            <element signature="e#12461#12462#0" expanded="true" />
+            <element signature="e#13629#13630#0" expanded="true" />
+            <element signature="e#13666#13667#0" expanded="true" />
             <element signature="docComment;method#taille#0;class#VecteurCreux#0" expanded="false" />
-            <marker date="1511417273431" expanded="false" signature="15209:15220" ph=" { " />
-            <marker date="1511417273431" expanded="false" signature="15232:15238" ph=" }" />
+            <element signature="e#17369#17370#0" expanded="true" />
+            <element signature="e#17409#17410#0" expanded="true" />
+            <element signature="e#18858#18859#0" expanded="true" />
+            <element signature="e#18906#18907#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5810,26 +5800,18 @@
         <state relative-caret-position="1020">
           <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding>
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#4645#4646#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6892#6893#0" expanded="true" />
-            <element signature="e#7365#7366#0" expanded="true" />
-            <element signature="e#7393#7394#0" expanded="true" />
-            <element signature="e#10690#10691#0" expanded="true" />
-            <element signature="e#10741#10742#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#12369#12370#0" expanded="true" />
+            <element signature="e#12424#12425#0" expanded="true" />
             <element signature="docComment;method#nbrElementNonZero#0;class#VecteurCreux#0" expanded="false" />
-            <element signature="e#11693#11694#0" expanded="true" />
-            <element signature="e#11730#11731#0" expanded="true" />
-            <element signature="e#12042#12043#0" expanded="true" />
-            <element signature="e#12068#12069#0" expanded="true" />
-            <element signature="e#12434#12435#0" expanded="true" />
-            <element signature="e#12461#12462#0" expanded="true" />
+            <element signature="e#13629#13630#0" expanded="true" />
+            <element signature="e#13666#13667#0" expanded="true" />
             <element signature="docComment;method#taille#0;class#VecteurCreux#0" expanded="false" />
-            <marker date="1511417273431" expanded="false" signature="15209:15220" ph=" { " />
-            <marker date="1511417273431" expanded="false" signature="15232:15238" ph=" }" />
+            <element signature="e#17369#17370#0" expanded="true" />
+            <element signature="e#17409#17410#0" expanded="true" />
+            <element signature="e#18858#18859#0" expanded="true" />
+            <element signature="e#18906#18907#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5839,26 +5821,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#4645#4646#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6892#6893#0" expanded="true" />
-            <element signature="e#7365#7366#0" expanded="true" />
-            <element signature="e#7393#7394#0" expanded="true" />
-            <element signature="e#10690#10691#0" expanded="true" />
-            <element signature="e#10741#10742#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#12369#12370#0" expanded="true" />
+            <element signature="e#12424#12425#0" expanded="true" />
             <element signature="docComment;method#nbrElementNonZero#0;class#VecteurCreux#0" expanded="false" />
-            <element signature="e#11693#11694#0" expanded="true" />
-            <element signature="e#11730#11731#0" expanded="true" />
-            <element signature="e#12042#12043#0" expanded="true" />
-            <element signature="e#12068#12069#0" expanded="true" />
-            <element signature="e#12434#12435#0" expanded="true" />
-            <element signature="e#12461#12462#0" expanded="true" />
+            <element signature="e#13629#13630#0" expanded="true" />
+            <element signature="e#13666#13667#0" expanded="true" />
             <element signature="docComment;method#taille#0;class#VecteurCreux#0" expanded="false" />
-            <marker date="1511417273431" expanded="false" signature="15209:15220" ph=" { " />
-            <marker date="1511417273431" expanded="false" signature="15232:15238" ph=" }" />
+            <element signature="e#17369#17370#0" expanded="true" />
+            <element signature="e#17409#17410#0" expanded="true" />
+            <element signature="e#18858#18859#0" expanded="true" />
+            <element signature="e#18906#18907#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -5935,13 +5909,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lacrima/VecteurCreuxTestTest.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4672">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -5966,14 +5933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -5982,49 +5941,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lacrima/main.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="-520">
+          <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="false" />
+            <element signature="e#5784#5785#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lacrima/VecteurCreuxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-826">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="1064" column="15" lean-forward="false" selection-start-line="1063" selection-start-column="4" selection-end-line="1075" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lacrima/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lacrima/VecteurCreux.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+        <state relative-caret-position="-370">
+          <caret line="497" column="33" lean-forward="true" selection-start-line="497" selection-start-column="33" selection-end-line="497" selection-end-column="33" />
           <folding>
-            <element signature="e#3339#3340#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-            <element signature="e#4645#4646#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-            <element signature="e#6865#6866#0" expanded="true" />
-            <element signature="e#6892#6893#0" expanded="true" />
-            <element signature="e#7365#7366#0" expanded="true" />
-            <element signature="e#7393#7394#0" expanded="true" />
-            <element signature="e#10690#10691#0" expanded="true" />
-            <element signature="e#10741#10742#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#12369#12370#0" expanded="true" />
+            <element signature="e#12424#12425#0" expanded="true" />
             <element signature="docComment;method#nbrElementNonZero#0;class#VecteurCreux#0" expanded="false" />
-            <element signature="e#11693#11694#0" expanded="true" />
-            <element signature="e#11730#11731#0" expanded="true" />
-            <element signature="e#12042#12043#0" expanded="true" />
-            <element signature="e#12068#12069#0" expanded="true" />
-            <element signature="e#12434#12435#0" expanded="true" />
-            <element signature="e#12461#12462#0" expanded="true" />
+            <element signature="e#13629#13630#0" expanded="true" />
+            <element signature="e#13666#13667#0" expanded="true" />
             <element signature="docComment;method#taille#0;class#VecteurCreux#0" expanded="false" />
-            <marker date="1511417273431" expanded="false" signature="15209:15220" ph=" { " />
-            <marker date="1511417273431" expanded="false" signature="15232:15238" ph=" }" />
+            <element signature="e#17369#17370#0" expanded="true" />
+            <element signature="e#17409#17410#0" expanded="true" />
+            <element signature="e#18858#18859#0" expanded="true" />
+            <element signature="e#18906#18907#0" expanded="true" />
           </folding>
         </state>
       </provider>

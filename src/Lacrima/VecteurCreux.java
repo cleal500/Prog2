@@ -54,7 +54,7 @@ public class VecteurCreux implements Iterable <Double> {
 
 
     private Maillon <Double> debut = null;
-
+    private Maillon <Double> next = null;
     /**
      * Construis un VecteurCreux où toutes les valeurs sont à 0.
      *
@@ -81,12 +81,11 @@ public class VecteurCreux implements Iterable <Double> {
         for (int i = 0; i < vecteurFixe.length; i++) {
             if (vecteurFixe[i] != 0) {
                 enfiler (vecteurFixe[i], i + 1);
-
             }
         }
     }
 
-    private Maillon <Double> next = null;
+
 
     /**
      * @param element
@@ -109,22 +108,6 @@ public class VecteurCreux implements Iterable <Double> {
         nbElement += 1;
     }
 
-    public void defiler( int k ) {
-
-        Maillon <Double> leMaillon = debut;
-
-        if (next == debut) {
-            next = null;
-        }
-        while (leMaillon.emplacement != k) {
-            leMaillon = leMaillon.suivant;
-        }
-
-        next = leMaillon.suivant;
-        next = leMaillon.suivant;
-
-        --nbElement;
-    }
 
     /**
      * Addition de 2 vecteurs.
@@ -140,7 +123,6 @@ public class VecteurCreux implements Iterable <Double> {
      *                                   est différent.
      */
     public VecteurCreux addition( VecteurCreux v2 ) throws IndexOutOfBoundsException {
-
 
         if (v2.taille () != this.taille ()) {
             throw new IndexOutOfBoundsException ();
@@ -166,7 +148,11 @@ public class VecteurCreux implements Iterable <Double> {
      * été multiplie par 's'.
      */
     public VecteurCreux agrandir( double s ) {
-        return null;
+        double[] nouveauVecteur = new double[taille];
+        for (int i = 0; i < taille; ++i) {
+            nouveauVecteur[i] = this.get (i + 1) * s;
+        }
+        return new VecteurCreux (nouveauVecteur);
     }
 
     /**
@@ -181,7 +167,26 @@ public class VecteurCreux implements Iterable <Double> {
      * si 'objet' est null ou n'est pas un VecteurCreux.
      */
     public boolean equals( Object objet ) {
-        return false;
+        Boolean testEgal = true;
+        int testValeurInterne = 0;
+
+        VecteurCreux v3 = (VecteurCreux) objet;
+        if (v3 == null) {
+            testEgal = false;
+        } else if (this.taille != v3.taille ()) {
+            testEgal = false;
+        } else if (this.taille () == v3.taille ()) {
+            for (int i = 0; i < this.taille (); ++i) {
+                if (this.get (i + 1) == v3.get (i + 1)) {
+                    ++testValeurInterne;
+                }
+            }
+        }
+        if (testValeurInterne != this.taille ()) {
+            testEgal = false;
+        }
+
+        return testEgal;
     }
 
     /**
@@ -197,7 +202,32 @@ public class VecteurCreux implements Iterable <Double> {
      *                                   est différent.
      */
     public boolean estAntiParallelA( VecteurCreux v2 ) throws IndexOutOfBoundsException {
-        return false;
+        boolean testAntiParallel = false;
+        double[] testValeur = new double[taille];
+        double s = 0;
+        double test = 0;
+        int indiceTest = 0;
+
+        if (v2.taille () != this.taille ()) {
+            throw new IndexOutOfBoundsException ();
+        }
+        for (int i = 0; i < this.taille (); ++i) {
+            if (this.get (i + 1) != 0 && v2.get (i + 1) != 0 && this.nbElement == v2.nbElement) {
+                testValeur[i] = this.get (i + 1) / v2.get (i + 1);
+                s = testValeur[i];
+            }
+        }
+
+        for (int y = 0; y < testValeur.length; ++y) {
+            if (testValeur[y] != 0) {
+                test += testValeur[y];
+                ++indiceTest;
+            }
+        }
+        if (test != 0 && s < 0) {
+            testAntiParallel = test / indiceTest == s;
+        }
+        return testAntiParallel;
     }
 
     /**
@@ -214,7 +244,22 @@ public class VecteurCreux implements Iterable <Double> {
      *                                   est différent.
      */
     public boolean estOpposeA( VecteurCreux v2 ) throws IndexOutOfBoundsException {
-        return false;
+        boolean testOppose = false;
+        double v1ContenuTotal = 0;
+        double v2ContenuTotal = 0;
+
+        if (v2.taille () != this.taille ()) {
+            throw new IndexOutOfBoundsException ();
+        }
+
+        if (this.nbElement == v2.nbElement) {
+            for (int i = 0; i < this.taille (); ++i) {
+                v1ContenuTotal += this.get (i + 1);
+                v2ContenuTotal += v2.get (i + 1);
+            }
+            testOppose = v1ContenuTotal + v2ContenuTotal == 0;
+        }
+        return testOppose;
     }
 
     /**
@@ -230,7 +275,35 @@ public class VecteurCreux implements Iterable <Double> {
      *                                   est différent.
      */
     public boolean estParallelA( VecteurCreux v2 ) throws IndexOutOfBoundsException {
-        return false;
+        boolean testParallel = false;
+
+        double[] testValeur = new double[taille];
+        double s = 0;
+        double test = 0;
+        int indiceTest = 0;
+
+        if (v2.taille () != this.taille ()) {
+            throw new IndexOutOfBoundsException ();
+        }
+        for (int i = 0; i < this.taille (); ++i) {
+            if (this.get (i + 1) != 0 && v2.get (i + 1) != 0 && this.nbElement == v2.nbElement) {
+                testValeur[i] = this.get (i + 1) / v2.get (i + 1);
+                s = testValeur[i];
+            }
+        }
+
+        for (int y = 0; y < testValeur.length; ++y) {
+            if (testValeur[y] != 0) {
+                test += testValeur[y];
+                ++indiceTest;
+            }
+        }
+        if (test != 0 && s > 0) {
+            testParallel = test / indiceTest == s;
+        }
+
+
+        return testParallel;
     }
 
     /**
@@ -270,7 +343,7 @@ public class VecteurCreux implements Iterable <Double> {
      */
     @Override
     public Iterator <Double> iterator() {
-        return new IterateurVecteurCreux ();
+        return new IterateurVecteurCreux (this);
     }
 
     /**
@@ -287,7 +360,17 @@ public class VecteurCreux implements Iterable <Double> {
      *                                   est différent.
      */
     public double multiplicationScalaire( VecteurCreux v2 ) throws IndexOutOfBoundsException {
-        return 0.0;
+
+        double resultat = 0;
+        if (this.taille () != v2.taille ()) {
+            throw new IndexOutOfBoundsException ();
+        }
+
+        for (int i = 0; i < this.taille (); ++i) {
+            resultat += this.get (i + 1) * v2.get (i + 1);
+        }
+
+        return resultat;
     }
 
     /**
@@ -308,7 +391,13 @@ public class VecteurCreux implements Iterable <Double> {
      * @return la norme du vecteur.
      */
     public double normeEucledienne() {
-        return 0.0;
+        double resultat = 0;
+
+        for (int i = 0; i < this.taille (); ++i) {
+            resultat += this.get (i + 1) * this.get (i + 1);
+        }
+
+        return Math.sqrt (resultat);
     }
 
     /**
@@ -321,7 +410,13 @@ public class VecteurCreux implements Iterable <Double> {
      * @return Un nouveau VecteurCreux opposé au vecteur 'this'.
      */
     public VecteurCreux oppose() {
-        return null;
+        double[] nouveauVecteur = new double[taille];
+
+        for (int i = 0; i < this.taille (); ++i) {
+            nouveauVecteur[i] = this.get (i + 1) * -1;
+        }
+
+        return new VecteurCreux (nouveauVecteur);
     }
 
     /**
@@ -373,8 +468,18 @@ public class VecteurCreux implements Iterable <Double> {
      *                                   est différent.
      */
     public VecteurCreux soustraction( VecteurCreux v2 ) throws IndexOutOfBoundsException {
-        return null;
+
+        if (v2.taille () != this.taille ()) {
+            throw new IndexOutOfBoundsException ();
+        }
+        double[] nouveauVecteur = new double[taille];
+
+        for (int i = 0; i < taille; ++i) {
+            nouveauVecteur[i] = this.get (i + 1) - v2.get (i + 1);
+        }
+        return new VecteurCreux (nouveauVecteur);
     }
+
 
     /**
      * Retourne le nombre d'éléments que le vecteur contient.
@@ -384,6 +489,11 @@ public class VecteurCreux implements Iterable <Double> {
      */
     public int taille() {
         return this.taille;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString ();
     }
 
     /**
@@ -396,9 +506,20 @@ public class VecteurCreux implements Iterable <Double> {
      *
      * @return le vecteur unitaire parallèle à 'this'.
      */
+
+
     public VecteurCreux unitaire() {
-        return null;
+
+        double n = normeEucledienne ();
+        double[] nouveauVecteur = new double[taille];
+
+        for (int i = 0; i < taille; ++i) {
+            nouveauVecteur[i] = this.get (i + 1) / n;
+        }
+        return new VecteurCreux (nouveauVecteur);
+
     }
+
 
     private class Maillon<Double> {
         private double interne;
@@ -425,17 +546,36 @@ public class VecteurCreux implements Iterable <Double> {
      */
     public class IterateurVecteurCreux implements Iterator <Double> {
         Maillon <Double> courrant;
+        int indice = 1;
+        int indiceTaille = 0;
+
+        public IterateurVecteurCreux( VecteurCreux origine ) {
+            courrant = origine.debut;
+        }
 
 
         @Override
         public boolean hasNext() {
-            return null != courrant;
+            boolean has = true;
+            if (indiceTaille == taille ()) {
+                has = false;
+            }
+            ++indiceTaille;
+            return has;
         }
 
         @Override
         public Double next() {
-            Double resultat = courrant.interne;
-            courrant = courrant.suivant;
+            Double resultat = 0.0;
+
+            if (null != courrant) {
+                if (indice == courrant.emplacement) {
+                    resultat = courrant.interne;
+                    courrant = courrant.suivant;
+                }
+            }
+            ++indice;
+
             return resultat;
         }
     }

@@ -1,5 +1,7 @@
 package Lacrima;
 
+import java.util.Arrays;
+
 public class main {
 
     public static void main( String[] args ) {
@@ -42,19 +44,12 @@ public class main {
         System.out.println(t.nbElement);
 
 
+        double[] t4 = {2, 0, 0, 0, 10, 0, 0, 0, 0, 20};
+        VecteurCreux v = new VecteurCreux (t4);
 
-
-        double [] t1 = {1};
-        double [] t2 = {1};
-        VecteurCreux v1 = new VecteurCreux( t1 );
-        VecteurCreux v2 = new VecteurCreux( t2 );
-
-        VecteurCreux r = v1.addition( v2 );
-
-
-
-
-
+        System.out.println (t4.toString ());
+        System.out.println ();
+        System.out.println (Arrays.toString (t4));
 
     }
 }
